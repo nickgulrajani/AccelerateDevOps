@@ -23,6 +23,11 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
+              - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v2
+       with:
+          role-to-assume: arn:aws:iam::982304134139:role/my-github-actions-role
+          aws-region: us-east-2
           aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
