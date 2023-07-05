@@ -8,7 +8,7 @@ env:
   ECS_SERVICE: nickg-demo-shop-service
   ECS_CLUSTER: default
   ECS_TASK_DEFINITION: ch9_release/aws-task-definition.json
-  CONTAINER_NAME: xyz-demo-shop
+  CONTAINER_NAME: nickg-demo-shop
 
 jobs:
   Build:
